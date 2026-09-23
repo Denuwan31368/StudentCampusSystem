@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class MainApp {
 
     private static final Scanner sc = new Scanner(System.in);
-    private static final StudentLinkedList studentList = new StudentLinkedList(); // Rathnayaka
+    private static final StudentLinkedList studentList = new StudentLinkedList(); 
     private static final ActionStack actionStack = new ActionStack();             // Sithum
     private static final ServiceQueue serviceQueue = new ServiceQueue();          // Sithum
     private static final StudentBST bst = new StudentBST();                      
@@ -19,7 +19,7 @@ public class MainApp {
             choice = readInt("Enter your choice: ");
             System.out.println();
             switch (choice) {
-                // ---- Rathnayaka: Linked List (Requirements 2, 12) ----
+            
                 case 1: addStudent(); break;
                 case 2: updateStudent(); break;
                 case 3: deleteStudent(); break;
@@ -127,9 +127,6 @@ public class MainApp {
         }
     }
 
-    // ============================================================
-    // RATHNAYAKA'S PART: Linked List / student record operations
-    // ============================================================
 
     private static void addStudent() {
         String id = readNonEmpty("Enter Student ID: ");
@@ -142,7 +139,7 @@ public class MainApp {
         double marks = readMarks("Enter Marks (0-100): ");
 
         Student s = new Student(id, name, programme, marks);
-        studentList.addStudent(s);      // Rathnayaka's linked list
+        studentList.addStudent(s);     
         bst.insert(s);                  
         hashTable.insert(s);            
         actionStack.push("Added student " + id + " (" + name + ")"); // logs to Sithum's stack
