@@ -1,11 +1,3 @@
-/**
- * ActionStack.java
- * Custom linked-node stack (LIFO) that records recent actions performed
- * in the system, giving a simple undo/history feature.
- *
- * MEMBER 2 RESPONSIBILITY: Stack and queue implementation.
- * Satisfies requirement #3.
- */
 public class ActionStack {
 
     private static class Node {
