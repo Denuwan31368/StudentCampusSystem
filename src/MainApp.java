@@ -9,7 +9,7 @@ public class MainApp {
     private static final ServiceQueue serviceQueue = new ServiceQueue();          
     private static final StudentBST bst = new StudentBST();                      
     private static final StudentHashTable hashTable = new StudentHashTable();    
-    private static final CampusGraph graph = new CampusGraph();                  // Madhura
+    private static final CampusGraph graph = new CampusGraph();                  
 
     public static void main(String[] args) {
         int choice;
@@ -33,7 +33,7 @@ public class MainApp {
                 case 8: bst.displayInOrder(); break;
                 case 9: searchByHashing(); break;
 
-                // ---- Madhura: Graph (Requirements 7-11) ----
+                
                 case 10: addLocation(); break;
                 case 11: removeLocation(); break;
                 case 12: addConnection(); break;
@@ -142,7 +142,7 @@ public class MainApp {
         studentList.addStudent(s);     
         bst.insert(s);                  
         hashTable.insert(s);            
-        actionStack.push("Added student " + id + " (" + name + ")"); // logs to Sithum's stack
+        actionStack.push("Added student " + id + " (" + name + ")"); 
         System.out.println("Student added successfully.");
     }
 
@@ -200,9 +200,6 @@ public class MainApp {
         System.out.println(s == null ? "Student not found." : "Found: " + s);
     }
 
-    // ============================================================
-    // MADHURA'S PART: Graph / campus location operations
-    // ============================================================
 
     private static void addLocation() {
         String name = readNonEmpty("Enter new campus location name: ");
