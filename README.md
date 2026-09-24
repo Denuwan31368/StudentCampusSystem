@@ -128,11 +128,11 @@ submission. Each member explains and demonstrates their own component:
 
 | Segment | Member | Covers |
 |---|---|---|
-| Intro | Denuwan Pilimathalawwa | Project overview |
-| 1 | Rathnayaka | Linked list & student records (options 1-4) |
-| 2 | Sithum | Stack & queue (options 5-7) |
-| 3 | Pilimathalawwa | BST & hashing (options 8-9) |
-| 4 | Madhura | Graph, BFS/DFS (options 10-15) |
-| Outro | Denuwan Pilimathalawwa | GitHub collaboration evidence |
+| Intro | A.M.D.C Pilimathalawwa | Project overview |
+| 1 | R.M.M.E Rathnayaka | Linked list & student records (options 1-4) |
+| 2 | Chamika Sithum | Stack & queue (options 5-7) |
+| 3 | A.M.D.C Pilimathalawwa | BST & hashing (options 8-9) |
+| 4 | Hashan Madhura | Graph, BFS/DFS (options 10-15) |
+| Outro | A.M.D.C Pilimathalawwa | GitHub collaboration evidence |
 
 
