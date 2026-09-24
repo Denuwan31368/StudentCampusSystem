@@ -5,8 +5,8 @@ public class MainApp {
 
     private static final Scanner sc = new Scanner(System.in);
     private static final StudentLinkedList studentList = new StudentLinkedList(); 
-    private static final ActionStack actionStack = new ActionStack();             // Sithum
-    private static final ServiceQueue serviceQueue = new ServiceQueue();          // Sithum
+    private static final ActionStack actionStack = new ActionStack();             
+    private static final ServiceQueue serviceQueue = new ServiceQueue();          
     private static final StudentBST bst = new StudentBST();                      
     private static final StudentHashTable hashTable = new StudentHashTable();    
     private static final CampusGraph graph = new CampusGraph();                  // Madhura
@@ -25,7 +25,7 @@ public class MainApp {
                 case 3: deleteStudent(); break;
                 case 4: studentList.displayAll(); break;
 
-                // ---- Sithum: Stack & Queue (Requirements 3, 4) ----
+                
                 case 5: addServiceRequest(); break;
                 case 6: processServiceRequest(); break;
                 case 7: actionStack.displayAll(); break;
