@@ -1,5 +1,3 @@
-# University Student Record and Campus Route Management System
-
 ## Group Members
 
 | # | Student ID | Full Name | Assigned Responsibility | Individual Contribution|
@@ -9,29 +7,45 @@
 | 3 | 23DA2-0428| A.M.D.C Pilimathalawwa | BST + hashing implementation | Implemented StudentBST.java (insert, search, delete, and sorted in-order display) and StudentHashTable.java (custom hash function with separate chaining for fast Student ID lookup). |
 | 4 | 23DA2-0313| Hashan Madhura| Graph, campus locations & BFS/DFS | |
 
-2. Objective
+# University Student Record and Campus Route Management System
 
-Develop a Java console application that manages university student records and represents connections between campus locations, demonstrating the practical use of linked lists, stacks, queues, trees, hashing, and graphs — the topics covered in Weeks 1–9 of CIT300.
+**Module:** CIT300 – Data Structures and Algorithms
+**Assessment:** Graded Practical Assignment 1 (Week 10)
+**Coverage:** Weeks 1–9 — Linear Data Structures, Trees, Hashing, and Graphs
 
-3. Requirements Coverage
-   
-#	Requirement	Status	Implemented In
-1	Store Student ID, Name, Programme, Marks	Done	Student.java
-2	Linked list to store/manage student records	Done	StudentLinkedList.java
-3	Stack for recent actions / undo-history	Done	ActionStack.java
-4	Queue for service requests in arrival order	Done	ServiceQueue.java
-5	BST/AVL to organise/search students by ID	Done	StudentBST.java
-6	Hashing for efficient Student ID search	Done	StudentHashTable.java
-7	Graph representing campus locations/connections	Done	CampusGraph.java
-8	Graph represented via adjacency list	Done	CampusGraph.java
-9	Add/remove campus locations and connections	Done	CampusGraph.java, MainApp.java
-10	Display connected locations / campus network	Done	CampusGraph.displayConnections()
-11	Graph traversal — BFS and DFS	Done	CampusGraph.bfs(), CampusGraph.dfs()
-12	Add, update, delete, search, display student records	Done	StudentLinkedList.java, MainApp.java
-13	Menu-driven console interface with input validation	Done	MainApp.java
-14	Handle invalid input, duplicates, missing records, unavailable connections	Done	MainApp.java (validation helpers + error checks throughout)
-   
-5. Menu
+## 2. Objective
+
+Develop a Java console application that manages university student records
+and represents connections between campus locations, demonstrating the
+practical use of linked lists, stacks, queues, trees, hashing, and graphs —
+the topics covered in Weeks 1–9 of CIT300.
+
+---
+
+## 3. Requirements Coverage
+
+| # | Requirement | Status | Implemented In |
+|---|---|---|---|
+| 1 | Store Student ID, Name, Programme, Marks | Done | `Student.java` |
+| 2 | Linked list to store/manage student records | Done | `StudentLinkedList.java` |
+| 3 | Stack for recent actions / undo-history | Done | `ActionStack.java` |
+| 4 | Queue for service requests in arrival order | Done | `ServiceQueue.java` |
+| 5 | BST/AVL to organise/search students by ID | Done | `StudentBST.java` |
+| 6 | Hashing for efficient Student ID search | Done | `StudentHashTable.java` |
+| 7 | Graph representing campus locations/connections | Done | `CampusGraph.java` |
+| 8 | Graph represented via adjacency list | Done | `CampusGraph.java` |
+| 9 | Add/remove campus locations and connections | Done | `CampusGraph.java`, `MainApp.java` |
+| 10 | Display connected locations / campus network | Done | `CampusGraph.displayConnections()` |
+| 11 | Graph traversal — BFS and DFS | Done | `CampusGraph.bfs()`, `CampusGraph.dfs()` |
+| 12 | Add, update, delete, search, display student records | Done | `StudentLinkedList.java`, `MainApp.java` |
+| 13 | Menu-driven console interface with input validation | Done | `MainApp.java` |
+| 14 | Handle invalid input, duplicates, missing records, unavailable connections | Done | `MainApp.java` (validation helpers + error checks throughout) |
+
+---
+
+## 4. Menu
+
+```
 1.  Add Student Record
 2.  Update Student Record
 3.  Delete Student Record
@@ -48,10 +62,13 @@ Develop a Java console application that manages university student records and r
 14. Display Campus Connections
 15. Traverse Campus Locations using BFS or DFS
 16. Exit
+```
 
-    
-5. Project Structure
-   
+---
+
+## 5. Project Structure
+
+```
 StudentCampusSystem/
 ├── README.md
 └── src/
@@ -63,30 +80,59 @@ StudentCampusSystem/
     ├── StudentHashTable.java  # Pilimathalawwa - hash table for fast ID search
     ├── CampusGraph.java       # Madhura - graph, adjacency list, BFS/DFS
     └── MainApp.java           # Shared - 16-option menu, integration, validation
-    
-7. Technology Stack
-   
-Language: Java (JDK 11+)
-Interface: Console-based (java.util.Scanner)
-Data structures: All core structures (linked list, stack, queue, BST, hash table) are implemented from scratch using custom node classes rather than java.util.LinkedList/Stack, to demonstrate understanding of the underlying mechanics as expected in a Data Structures & Algorithms module. The graph uses java.util.Map/List only as the underlying adjacency-list container — the graph logic (add/remove/BFS/DFS) itself is custom.
-9. How to Compile and Run
+```
 
-Requires a Java JDK (11 or newer) installed.
+---
 
-bash
-cd StudentCampusSystem/src
-javac *.java
-java MainApp
+## 6. Technology Stack
 
-The screen clears before each new menu, and after every action you'll see "Press Enter to return to the menu..." — press Enter to continue.
+- **Language:** Java (JDK 11+)
+- **Interface:** Console-based (`java.util.Scanner`)
+- **Data structures:** All core structures (linked list, stack, queue, BST,
+  hash table) are implemented from scratch using custom node classes rather
+  than `java.util.LinkedList`/`Stack`, to demonstrate understanding of the
+  underlying mechanics as expected in a Data Structures & Algorithms module.
+  The graph uses `java.util.Map`/`List` only as the underlying adjacency-list
+  container — the graph logic (add/remove/BFS/DFS) itself is custom.
 
-8. Testing
+---
 
-The system was manually tested end-to-end against all 16 menu options and all 14 requirements, including deliberate invalid-input cases: non-numeric menu choices, out-of-range/non-numeric marks, empty text fields, duplicate Student IDs, duplicate location names, operations on missing students/locations, and connections to non-existent locations. All cases were confirmed to fail gracefully with a clear error message rather than crashing the program.
+## 8. Testing
 
-9. GitHub Collaboration
-    
-Each member worked on their own feature branch (feature/linked-list, feature/stack-queue, feature/bst-hashing, feature/graph), committing incrementally as each method was completed.
-Work was merged into main via individual Pull Requests, each reviewed by at least one other team member before merging.
-MainApp.java was integrated last, once all four branches were merged, since it depends on every other class.
-Full commit history is visible under the repository's Commits tab; merged Pull Requests are visible under the Pull requests tab.
+The system was manually tested end-to-end against all 16 menu options and
+all 14 requirements, including deliberate invalid-input cases:
+non-numeric menu choices, out-of-range/non-numeric marks, empty text
+fields, duplicate Student IDs, duplicate location names, operations on
+missing students/locations, and connections to non-existent locations.
+All cases were confirmed to fail gracefully with a clear error message
+rather than crashing the program.
+
+---
+
+## 9. GitHub Collaboration
+
+- Each member worked on their own feature branch (`feature/linked-list`,
+  `feature/stack-queue`, `feature/bst-hashing`, `feature/graph`), committing
+  incrementally as each method was completed.
+- Work was merged into `main` via individual Pull Requests, each reviewed
+  by at least one other team member before merging.
+- `MainApp.java` was integrated last, once all four branches were merged,
+  since it depends on every other class.
+- Full commit history is visible under the repository's Commits tab;
+  merged Pull Requests are visible under the Pull requests tab.
+
+## 10. Demonstration Video
+
+A merged video demonstrating the complete system is included with this
+submission. Each member explains and demonstrates their own component:
+
+| Segment | Member | Covers |
+|---|---|---|
+| Intro | Denuwan Pilimathalawwa | Project overview |
+| 1 | Rathnayaka | Linked list & student records (options 1-4) |
+| 2 | Sithum | Stack & queue (options 5-7) |
+| 3 | Pilimathalawwa | BST & hashing (options 8-9) |
+| 4 | Madhura | Graph, BFS/DFS (options 10-15) |
+| Outro | Denuwan Pilimathalawwa | GitHub collaboration evidence |
+
+
