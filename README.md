@@ -17,7 +17,7 @@
 
 Develop a Java console application that manages university student records
 and represents connections between campus locations, demonstrating the
-practical use of linked lists, stacks, queues, trees, hashing, and graphs —
+practical use of linked lists, stacks, queues, trees, hashing, and graphs -
 the topics covered in Weeks 1–9 of CIT300.
 
 ---
@@ -93,7 +93,7 @@ StudentCampusSystem/
   than `java.util.LinkedList`/`Stack`, to demonstrate understanding of the
   underlying mechanics as expected in a Data Structures & Algorithms module.
   The graph uses `java.util.Map`/`List` only as the underlying adjacency-list
-  container — the graph logic (add/remove/BFS/DFS) itself is custom.
+  container - the graph logic (add/remove/BFS/DFS) itself is custom.
 
 ---
 
