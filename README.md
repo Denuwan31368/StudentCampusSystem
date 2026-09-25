@@ -9,9 +9,9 @@
 
 # University Student Record and Campus Route Management System
 
-**Module:** CIT300 – Data Structures and Algorithms
+**Module:** CIT300 - Data Structures and Algorithms
 **Assessment:** Graded Practical Assignment 1 (Week 10)
-**Coverage:** Weeks 1–9 — Linear Data Structures, Trees, Hashing, and Graphs
+**Coverage:** Weeks 1–9 - Linear Data Structures, Trees, Hashing, and Graphs
 
 ## 2. Objective
 
